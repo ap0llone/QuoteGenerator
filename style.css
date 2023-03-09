@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+body{
+    background-color: #b47ee5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 120px;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.quote__box {
+    max-width: 500px;
+    max-height: 300px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.quote {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+.author {
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.quote__generator {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/* Mobile  */
+@media(max-width:705px) {
+    .container{
+        padding: 0 50px;
+    }
+}
+@media(max-width:565px) {
+    .container{
+        padding: 0 20px;
+    }
+    .header{
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:450px) {
+    .header{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .quote__box{
+        padding-top: 40px;
+        padding-bottom: 10px;
+        max-height: 500px;
+    }
+}
+@media(max-width:375px) {
+    .header{
+        font-size: 20px;
+    }
+    .quote__box p{
+        font-size: 16px;
+    }
+}
